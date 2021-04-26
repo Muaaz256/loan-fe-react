@@ -1,8 +1,17 @@
 import './App.css';
-import Counter from "./components/Counter";
+import Counters from "./components/Counters";
+import NavBar from "./components/NavBar";
+import React from "react";
 
 function App() {
-  return <Counter/>;
+  return (
+    <React.Fragment>
+      <NavBar />
+      <main className="container">
+        <Counters />
+      </main>
+    </React.Fragment>
+  );
 }
 
 export default App;
